@@ -3171,7 +3171,7 @@ int main()
 }
 ```
 58. Write a C program to implement a reader-writer lock using pthreads. Create multiple reader threads and writer threads and ensure proper synchronization using the reader-writer lock? 
-````
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
