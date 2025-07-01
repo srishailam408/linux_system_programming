@@ -150,9 +150,8 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to create two threads that print their thread IDs? */
-
+5. Write a C program to create two threads that print their thread IDs?
+```
 #include <stdio.h>
 #include <pthread.h>
 
@@ -173,9 +172,9 @@ int main()
 
     return 0;
 }
-
-/* Develop a C program to create a thread that prints the sum of two numbers? */
-
+```
+6. Develop a C program to create a thread that prints the sum of two numbers?
+```
 #include <stdio.h>
 #include <pthread.h>
 
@@ -211,9 +210,9 @@ int main()
 
     return 0;
 }
-
-/* Implement a C program to create a thread that calculates the square of a number? */
-
+```
+7. Implement a C program to create a thread that calculates the square of a number? 
+```
 #include <stdio.h>
 #include <pthread.h>
 
@@ -248,9 +247,9 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to create a thread that prints the current date and time? */
-
+```
+8. Write a C program to create a thread that prints the current date and time? 
+```
 #include <stdio.h>
 #include <pthread.h>
 #include <time.h>
@@ -295,9 +294,9 @@ int main()
     pthread_join(thread, NULL);
     return 0;
 }
-
-/* Develop a C program to create a thread that checks if a number is prime? */
-
+```
+9. Develop a C program to create a thread that checks if a number is prime? 
+```
 #include <stdio.h>
 #include <pthread.h>
 #include <math.h>
@@ -355,9 +354,9 @@ int main()
 
     return 0;
 }
-
-/* Implement a C program to create a thread that checks if a given string is a palindrome? */
-
+```
+10. Implement a C program to create a thread that checks if a given string is a palindrome?
+```
 #include <stdio.h>
 #include <string.h>
 #include <pthread.h>
