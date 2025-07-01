@@ -1,5 +1,5 @@
-/* Write a C program to create a child process using fork() and demonstrate process communication using shared memory and semaphores */
-
+1. Write a C program to create a child process using fork() and demonstrate process communication using shared memory and semaphores 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -110,9 +110,9 @@ int main()
 
     return 0;
 }
-
-/* Write a program in C to create a zombie process and explain how to avoid it */
-
+```
+2. Write a program in C to create a zombie process and explain how to avoid it 
+```
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -140,8 +140,9 @@ int main()
 	}
 	return 0;
 }
-/* Write a C program to demonstrate the use of the system() function for executing shell commands. */
-
+```
+3. Write a C program to demonstrate the use of the system() function for executing shell commands. 
+```
 #include<stdio.h>
 #include<stdlib.h>
 int main()
@@ -157,8 +158,9 @@ int main()
 	printf("\ndone executing shell command.\n");
 	return 0;
 }
-/* Write a C program to demonstrate the use of the execvpe() function. */
-
+```
+4. Write a C program to demonstrate the use of the execvpe() function. 
+```
 #define _GNU_SOURCE 
 #include <stdio.h>
 #include <stdlib.h>
@@ -179,8 +181,9 @@ int main()
     }
     return 0;
 }
-/* Write a program in C to demonstrate inter-process communication (IPC) using shared memory. */
-
+```
+5. Write a program in C to demonstrate inter-process communication (IPC) using shared memory. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -246,8 +249,9 @@ int main()
 
     return 0;
 }
-/* Write a program in C to demonstrate the use of the nice() system call for adjusting process priority. */
-
+```
+6. Write a program in C to demonstrate the use of the nice() system call for adjusting process priority. 
+```
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -284,8 +288,9 @@ int main()
 	printf("confirmed new priority: %d\n",priority);
 	return 0;
 }
-/* Write a C program to demonstrate process synchronization using the fork() and wait() system calls. */
-
+```
+7. Write a C program to demonstrate process synchronization using the fork() and wait() system calls. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -316,9 +321,9 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to create a child process using fork() and demonstrate inter-process communication (IPC) using shared memory. */
-
+```
+8. Write a C program to create a child process using fork() and demonstrate inter-process communication (IPC) using shared memory. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/ipc.h>
@@ -390,8 +395,9 @@ int main()
 
     return 0;
 }
-/* Write a C program to create a child process using fork() and demonstrate process communication using message queues. */
-
+```
+9. Write a C program to create a child process using fork() and demonstrate process communication using message queues. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -453,9 +459,9 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to create a child process using fork() and demonstrate process synchronization using mutexes. */
-
+```
+10. Write a C program to create a child process using fork() and demonstrate process synchronization using mutexes. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -520,9 +526,9 @@ int main()
 
     return 0;
 }
-
-/*  Write a program in C to create a child process using fork() and print its PID. */
-
+```
+11. Write a program in C to create a child process using fork() and print its PID. 
+```
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -549,8 +555,9 @@ int main()
 	}
 	return 0;
 }
-/* Write a C program to demonstrate the use of the waitpid() function for process synchronization. */
-
+```
+12. Write a C program to demonstrate the use of the waitpid() function for process synchronization. 
+```
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -609,9 +616,9 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to create a process using fork() and pass arguments to the child process. */
-
+```
+13. Write a C program to create a process using fork() and pass arguments to the child process. 
+```
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -642,8 +649,9 @@ int main()
 	}
 	return 0;
 }
-/* Write a C program to demonstrate the use of fork() system call. */
-
+```
+14. Write a C program to demonstrate the use of fork() system call. 
+```
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -666,9 +674,9 @@ int main()
 	}
 	return 0;
 }
-
-/* Write a C program to create a child process using vfork() and demonstrate its usage. */
-
+```
+15. Write a C program to create a child process using vfork() and demonstrate its usage. 
+```
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -696,8 +704,9 @@ int main()
 	}
 	return 0;
 }
-/* Write a C program to demonstrate the use of the clone() system call to create a thread */
-
+```
+16. Write a C program to demonstrate the use of the clone() system call to create a thread 
+```
 #include<sched.h>
 #include<stdio.h>
 #include<stdlib.h>
@@ -734,8 +743,9 @@ int main()
 	free(stack);
 	return 0;
 }
-/* Write a C program to create a process using fork() and change its scheduling policy using sched_setscheduler(). */
-
+```
+17. Write a C program to create a process using fork() and change its scheduling policy using sched_setscheduler(). 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -797,9 +807,9 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to demonstrate the use of the prctl() system call to change process attributes. */
-
+```
+18. Write a C program to demonstrate the use of the prctl() system call to change process attributes. 
+```
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -829,8 +839,9 @@ int main()
 
     return 0;
 }
-/* Write a C program to create a child process using fork() and demonstrate process synchronization using condition variables. */
-
+```
+19. Write a C program to create a child process using fork() and demonstrate process synchronization using condition variables. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -907,9 +918,9 @@ int main()
     }
     return 0;
 }
-
-/* Write a C program to create a child process using fork() and demonstrate process communication using named pipes (FIFOs). */
-
+```
+20. Write a C program to create a child process using fork() and demonstrate process communication using named pipes (FIFOs). 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -985,8 +996,9 @@ int main()
 
     return 0;
 }
-/* Write a C program to create multiple child processes using fork() and display their PIDs */
-
+```
+21. Write a C program to create multiple child processes using fork() and display their PIDs 
+```
 
 #include<stdio.h>
 #include<unistd.h>
@@ -1019,8 +1031,9 @@ int main()
 	printf("Parent process (PID: %d) has created %d child processes.\n", getpid(), N_C);
 	return 0;
 }
-/* Write a program in C to create a daemon process. */
-
+```
+22. Write a program in C to create a daemon process. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -1082,8 +1095,9 @@ int main()
     create_daemon();
     return 0;
 }
-/*Write a program in C to demonstrate process synchronization using semaphores. */
-
+```
+23. Write a program in C to demonstrate process synchronization using semaphores. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -1166,8 +1180,9 @@ int main()
 
     return 0;
 }
-/* Write a C program to create a process group and change its process group ID (PGID). */
-
+```
+24. Write a C program to create a process group and change its process group ID (PGID). 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -1211,8 +1226,9 @@ int main()
 
     return 0;
 }
-/* Write a C program to create a pipeline between two processes using the pipe() system call. */
-
+```
+25. Write a C program to create a pipeline between two processes using the pipe() system call. 
+```
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -1248,8 +1264,9 @@ int main()
 	}
 	return 0;
 }
-/* Write a C program to create a child process using fork() and communicate between parent and child using pipes. */
-
+```
+26. Write a C program to create a child process using fork() and communicate between parent and child using pipes. 
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -1312,9 +1329,9 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to illustrate the use of the execvp() function. */
-
+```
+27. Write a C program to illustrate the use of the execvp() function. 
+```
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
@@ -1344,9 +1361,9 @@ int main()
 	}
 	return 0;
 }
-
-/* Write a C program to create a child process using fork() and demonstrate process synchronization using semaphores. */
-
+```
+28. Write a C program to create a child process using fork() and demonstrate process synchronization using semaphores. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -1420,9 +1437,9 @@ int main()
 
     return 0;
 }
-
-/* Write a C program to create a child process using fork() and demonstrate process communication using sockets. */
-
+```
+29. Write a C program to create a child process using fork() and demonstrate process communication using sockets. 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
