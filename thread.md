@@ -4090,3 +4090,98 @@ int main()
 
     return 0;
 }
+```
+76. Implement a C program to create a thread that generates random numbers and synchronizes access to a shared buffer?
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h> 
+
+#define BUFFER_SIZE 10
+
+int buffer[BUFFER_SIZE];
+int count = 0;
+
+pthread_mutex_t buffer_mutex;
+
+void* producer_thread(void* arg) 
+{
+    for (int i = 0; i < BUFFER_SIZE; i++) 
+    {
+        int num = rand() % 100;
+
+        pthread_mutex_lock(&buffer_mutex);
+
+        buffer[count] = num;
+        count++;
+
+        printf("Produced: %d (buffer count: %d)\n", num, count);
+
+        pthread_mutex_unlock(&buffer_mutex);
+
+        sleep(1);
+    }
+
+    return NULL;
+}
+
+int main() 
+{
+    pthread_t producer;
+    if (pthread_mutex_init(&buffer_mutex, NULL) != 0) 
+    {
+        perror("Mutex init failed");
+        return 1;
+    }
+
+    srand(time(NULL));
+
+    if (pthread_create(&producer, NULL, producer_thread, NULL) != 0) 
+    {
+        perror("pthread_create");
+        pthread_mutex_destroy(&buffer_mutex);
+        return 1;
+    }
+    pthread_join(producer, NULL);
+    printf("Final buffer contents:\n");
+    for (int i = 0; i < count; i++) 
+    {
+        printf("%d ", buffer[i]);
+    }
+    printf("\n");
+
+    pthread_mutex_destroy(&buffer_mutex);
+
+    return 0;
+}
+```
+77. Write a C program to create a thread that calculates the sum of squares of numbers from 1 to 100? 
+```
+#include <stdio.h>
+#include <pthread.h>
+
+long long sum_of_squares = 0;
+
+void* calculate_sum_of_squares(void* arg) 
+{
+    for (int i = 1; i <= 100; i++) 
+    {
+        sum_of_squares += (long long)i * i;
+    }
+    pthread_exit(NULL);
+}
+
+int main() 
+{
+    pthread_t thread;
+    if (pthread_create(&thread, NULL, calculate_sum_of_squares, NULL) != 0) 
+    {
+        perror("pthread_create");
+        return 1;
+    }
+    pthread_join(thread, NULL);
+    printf("Sum of squares from 1 to 100 is: %lld\n", sum_of_squares);
+
+    return 0;
+}
