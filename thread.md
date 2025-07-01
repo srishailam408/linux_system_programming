@@ -3808,9 +3808,9 @@ int main()
     pthread_join(thread, NULL);
     return 0;
 }
-
-/* Implement a C program to create a thread that checks if a given number is a perfect square? */
-
+```
+71. Implement a C program to create a thread that checks if a given number is a perfect square? 
+```
 #include <stdio.h>
 #include <pthread.h>
 #include <math.h>
@@ -3856,7 +3856,7 @@ int main()
     return 0;
 }
 ```
-71. Implement a C program to create a thread that checks if a given number is divisible by another given number?
+72. Implement a C program to create a thread that checks if a given number is divisible by another given number?
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -3917,7 +3917,7 @@ int main()
     return 0;
 }
 ```
-72. Develop a C program to create a thread that prints the multiplication table of a given number up to a given limit? 
+73. Develop a C program to create a thread that prints the multiplication table of a given number up to a given limit? 
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -3960,7 +3960,7 @@ int main()
     return 0;
 }
 ```
-73.  Develop a C program to create a thread that prints the current system time 
+74.  Develop a C program to create a thread that prints the current system time 
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -3995,7 +3995,7 @@ int main()
     return 0;
 }
 ```
-74. Write a C program to create two threads that increment and decrement a shared variable,respectively, using mutex locks?
+75. Write a C program to create two threads that increment and decrement a shared variable,respectively, using mutex locks?
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -4050,7 +4050,7 @@ int main()
     return 0;
 }
 ````
-75. Develop a C program to create a thread that prints numbers from 10 to 1 in descending order using mutex locks? 
+76. Develop a C program to create a thread that prints numbers from 10 to 1 in descending order using mutex locks? 
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -4091,7 +4091,7 @@ int main()
     return 0;
 }
 ```
-76. Implement a C program to create a thread that generates random numbers and synchronizes access to a shared buffer?
+77. Implement a C program to create a thread that generates random numbers and synchronizes access to a shared buffer?
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -4156,7 +4156,7 @@ int main()
     return 0;
 }
 ```
-77. Write a C program to create a thread that calculates the sum of squares of numbers from 1 to 100? 
+78. Write a C program to create a thread that calculates the sum of squares of numbers from 1 to 100? 
 ```
 #include <stdio.h>
 #include <pthread.h>
