@@ -1,5 +1,5 @@
-/* Write a C program to create a thread that prints "Hello, World!"? */
-
+1. Write a C program to create a thread that prints "Hello, World!"? 
+```
 #include <stdio.h>
 #include <pthread.h>
 
@@ -21,9 +21,9 @@ int main()
 
     return 0;
 }
-
-/* Modify the above program to create multiple threads, each printing its own message? */
-
+````
+2. Modify the above program to create multiple threads, each printing its own message? 
+```
 #include <stdio.h>
 #include <pthread.h>
 #include <stdlib.h>
@@ -65,9 +65,9 @@ int main()
 
     return 0;
 }
-
-/* Develop a C program to create two threads that print numbers from 1 to 10 concurrently */
-
+```
+3. Develop a C program to create two threads that print numbers from 1 to 10 concurrently 
+```
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h> 
@@ -98,8 +98,9 @@ int main()
 
     return 0;
 }
-
-/* Implement a C program to create a thread that calculates the factorial of a given number? */
+```
+4. Implement a C program to create a thread that calculates the factorial of a given number?
+```
 #include <stdio.h>
 #include <pthread.h>
 
