@@ -150,6 +150,7 @@ int main()
 
     return 0;
 }
+```
 5. Write a C program to create two threads that print their thread IDs?
 ```
 #include <stdio.h>
@@ -420,8 +421,7 @@ int main()
     return 0;
 }
 ```
-11. Write a C program to create a thread that prints "Hello, World!" with thread
-synchronization? 
+11. Write a C program to create a thread that prints "Hello, World!" with thread synchronization? 
 ```
 #include <stdio.h>
 #include <pthread.h>
