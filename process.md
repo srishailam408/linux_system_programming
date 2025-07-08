@@ -1,4 +1,4 @@
-###1. Write a C program to create a child process using fork() and demonstrate process communication using shared memory and semaphores 
+1. Write a C program to create a child process using fork() and demonstrate process communication using shared memory and semaphores 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
